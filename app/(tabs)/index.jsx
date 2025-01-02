@@ -1,13 +1,13 @@
 import { View, Text, StyleSheet, ImageBackground } from 'react-native'
 import React from 'react'
-import starViewLogo from "@/assets/images/starview.png"
+import background from "@/assets/images/pexels-cliford-mervil.jpg"
 
 const app = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={starViewLogo}
-        resizeMethod='cover'>
+        source={background}
+        resizeMethod='contain'>
         <Text style={styles.text}>2025 Goals</Text>
       </ImageBackground>
     </View>
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     flex: 1,
-    resizeMode: 'cover',
+    resizeMode: 'contain',
     justifyContent: 'center'
   },
   text: {
